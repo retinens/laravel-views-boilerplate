@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>You are ready to go!</h1>
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <h1>You are ready to go!</h1>
+    </div>
 @stop
+
