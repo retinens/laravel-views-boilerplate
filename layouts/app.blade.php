@@ -19,9 +19,7 @@
 </div>
 {{-- NAV --}}
 @include('layouts.header')
-<div style="margin-top: 70px">
-    @yield('content')
-</div>
+@yield('content')
 {{-- CONTENT --}}
 
 @include('layouts.footer')
