@@ -18,11 +18,11 @@
     @include('cookieConsent::index')
 </div>
 {{-- NAV --}}
-@include('layouts.header')
+@include('app.layouts.header')
 @yield('content')
 {{-- CONTENT --}}
 
-@include('layouts.footer')
+@include('app.layouts.footer')
 <script src="{{mix('/app/js/manifest.js')}}"></script>
 <script src="{{mix('/app/js/vendor.js')}}"></script>
 <script src="{{mix('/app/js/app.js')}}"></script>
