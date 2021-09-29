@@ -1,0 +1,5 @@
+@include('app.layout.common.htmlHeader')
+@include('app.layout.header')
+@yield('content')
+@include('app.layout.footer')
+@include('app.layout.common.htmlFooter')
