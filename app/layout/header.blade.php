@@ -1,1 +1,1 @@
-{{--//This file contains all the header for the base layout of the website.--}}
+{{--//This file contains all the header for the header/nav layout of the website.--}}

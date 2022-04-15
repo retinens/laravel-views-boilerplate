@@ -1,1 +1,1 @@
-{{--This file contains all the footer for the base layout of the website.--}}
+{{--This file contains all the footer for the footer layout of the website.--}}

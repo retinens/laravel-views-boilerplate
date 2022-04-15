@@ -1,8 +1,7 @@
 @livewireScripts
-
-<script src="{{mix('/app/js/manifest.js')}}"></script>
-<script src="{{mix('/app/js/vendor.js')}}"></script>
-<script src="{{mix('/app/js/app.js')}}"></script>
+<script src="{{ mix('/js/manifest.js',"app") }}"></script>
+<script src="{{ mix('/js/vendor.js',"app") }}"></script>
+<script src="{{ mix('/js/app.js',"app") }}"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
     WebFont.load({
@@ -11,6 +10,6 @@
         }
     });
 </script>
+<script src="{{ mix('js/tarteaucitron.js', 'app') }}"></script>
+
 @stack('scripts')
-</body>
-</html>
