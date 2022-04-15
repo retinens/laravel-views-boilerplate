@@ -1,5 +1,10 @@
 @extends('admin.layout.admin')
-
+@section('breadcrumbs')
+    <li class="breadcrumb-item">
+        <a href="{{ route('admin.admin-users.index') }}">Utilisateurs admin</a>
+    </li>
+    <li class="breadcrumb-item active">Ajouter un utilisateur</li>
+@stop
 @section('content')
     <div class="">
         <div class="row justify-content-center">
