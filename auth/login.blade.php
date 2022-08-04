@@ -7,7 +7,7 @@
                 <div class="p-md-5 w-100">
                     <h1>Connexion</h1>
                     @include('app.layout.common.alerts')
-                    <form method="POST" action="{{ route('login-admin') }}" class="form-validate">
+                    <form method="POST" action="{{ route('login') }}" class="form-validate">
                         @csrf
                         <div class="form-floating mb-3">
                             {{ Form::email('email','',['class' => 'form-control',"required"]) }}
