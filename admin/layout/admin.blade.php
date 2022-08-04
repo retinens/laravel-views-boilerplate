@@ -6,7 +6,9 @@
 @include('admin.layout.sidebar')
 <main class="content">
     @include('admin.layout.content-header')
-    @yield('content')
+    <div class="mb-3">
+        @yield('content')
+    </div>
     @include('admin.layout.footer')
 </main>
 @include('admin.layout.common.htmlFooter')
