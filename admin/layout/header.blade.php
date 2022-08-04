@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-md-none">
     <a class="navbar-brand me-lg-5" href="{{ route('admin.index') }}">
-        ADMIN
+        ADMIN {{ config('app.name') }}
     </a>
     <div class="d-flex align-items-center">
         <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse"

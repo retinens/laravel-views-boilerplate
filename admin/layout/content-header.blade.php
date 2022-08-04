@@ -22,6 +22,12 @@
                         </div>
                     </a>
                     <div class="dropdown-menu dashboard-dropdown dropdown-menu-end mt-2 py-1">
+
+                        <a class="dropdown-item d-flex align-items-center" href="{{ route('home') }}">
+                            <i class="fa fa-eye dropdown-icon me-2"></i>
+                            Voir le site
+                        </a>
+
                         <a class="dropdown-item d-flex align-items-center" href="{{ route('logout') }}" onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">
                             <form method="POST" id="logout-form" action="{{ route('logout') }}">
