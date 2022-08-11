@@ -3,10 +3,9 @@
 @include('app.layout.common.htmlHeader')
 <body class="">
 @include('app.layout.header')
-<div class="margin-body">
+<div class="">
     @yield('content')
 </div>
-@include('app.layout.footer')
 @include('app.layout.common.htmlFooter')
 </body>
 </html>
