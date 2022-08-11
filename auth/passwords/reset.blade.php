@@ -1,7 +1,7 @@
 @extends('auth.layout.auth')
 
 @section('content')
-    <div class="d-flex align-items-center ">
+    <div class="d-flex align-items-center min-vh-100">
         <div class="container">
             <div class="row justify-content-center">
                 <div class=" card col-md-8">
@@ -9,44 +9,24 @@
                         <h1>{{ __('Reset Password') }}</h1>
                         <form method="POST" action="{{ route('password.update') }}" class="form-validate">
                             @csrf
-
                             <input type="hidden" name="token" value="{{ $token }}">
-
-                            <div class="form-group">
-                                <label for="email">{{ __('E-Mail Address') }}</label>
-
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                            <div class="form-floating mb-3">
+                                {{ Form::email('email',$email ?? '',['class' => 'form-control',"required",'placeholder' => "email"]) }}
+                                {{ Form::label('email','Email') }}
                             </div>
-
-                            <div class="form-group">
-                                <label for="password">{{ __('Password') }}</label>
-
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                            <div class="form-floating mb-3">
+                                {{ Form::password('password',['class' => 'form-control',"required","autocomplete" =>"new-password",'placeholder' => "password"]) }}
+                                {{ Form::label('password','Password') }}
                             </div>
-
-                            <div class="form-group">
-                                <label for="password-confirm" >{{ __('Confirm Password') }}</label>
-                                <input id="password-confirm" type="password" equalTo="#password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                            <div class="form-floating mb-3">
+                                {{ Form::password('password_confirmation',['class' => 'form-control',"required","autocomplete" =>"new-password",'placeholder' => "password_confirmation"]) }}
+                                {{ Form::label('password_confirmation','Password confirmation') }}
                             </div>
+                            <div class="text-end">
 
-                            <div class="form-group  mb-0">
-                                <div class="text-right">
-                                    <button type="submit" class="btn btn-primary">
-                                        {{ __('Reset Password') }}
-                                    </button>
-                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    {{ __('Reset Password') }}
+                                </button>
                             </div>
                         </form>
                     </div>
