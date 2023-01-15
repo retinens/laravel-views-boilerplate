@@ -10,7 +10,7 @@
         "groupServices" : true,
         "moreInfoLink": false
     });
-    tarteaucitron.user.gtagUa = 'G-XXXXXXXX';
-    tarteaucitron.user.gtagMore = function () {};
-    (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+    // tarteaucitron.user.gtagUa = 'G-XXXXXXXX';
+    // tarteaucitron.user.gtagMore = function () {};
+    // (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
 </script>
