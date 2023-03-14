@@ -5,7 +5,7 @@
 <script>
     WebFont.load({
         google: {
-            families: ['Poppins:300,400,700']
+            families: ['Noto+Serif:300,400,700']
         }
     });
 </script>

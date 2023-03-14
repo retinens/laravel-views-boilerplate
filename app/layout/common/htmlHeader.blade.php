@@ -10,7 +10,7 @@
     <link rel="manifest" href="/site.webmanifest">
     @vite(['resources/app/sass/app.scss'])
     @stack('stylesheets')
-{{--    <meta name="theme-color" content="#"/>--}}
+    {{--    <meta name="theme-color" content="#"/>--}}
     @livewireStyles
 </head>
 
