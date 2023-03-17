@@ -4,4 +4,5 @@
 @livewireScripts
 @vite(['resources/admin/js/admin.js'])
 @stack('scripts')
+<x-toastr/>
 @yield('footer')

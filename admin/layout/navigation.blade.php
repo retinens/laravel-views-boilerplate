@@ -12,4 +12,13 @@
             <span class="sidebar-text">{{ __('Dashboard') }}</span>
         </a>
     </li>
+    <hr>
+    <li class="nav-item">
+        <a href="{{ route('admin.admin-users.index') }}" class="nav-link">
+            <span class="sidebar-icon fa-fw fa fa-user-cog"></span>
+            <span class="sidebar-text">
+                Utilisateurs CMS
+            </span>
+        </a>
+    </li>
 </ul>
