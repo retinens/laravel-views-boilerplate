@@ -12,11 +12,10 @@
                 </div>
             </div>
             <div class="card-body">
-
                 <table class="table dataTable table-sm table-striped" data-display-length='-1'>
                     <thead>
                     <tr>
-                        <th>ID</th>
+                        <th class="fit">ID</th>
                         <th>Nom</th>
                         <th>Email</th>
                         <th data-orderable="false" class="text-end">Actions</th>
