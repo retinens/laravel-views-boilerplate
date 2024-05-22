@@ -9,18 +9,18 @@
     <div class="row">
         <div class="col-md-6">
             <div class="card card-body">
-                <span>
+                <p>
                     {{$adminUser->title}}
-                </span>
-                <span>
+                </p>
+                <p>
                     Nom : {{$adminUser->last_name}}
-                </span>
-                <span>
+                </p>
+                <p>
                     Prénom : {{$adminUser->first_name}}
-                </span>
-                <span>
+                </p>
+                <p>
                     Adresse mail : {{$adminUser->email}}
-                </span>
+                </p>
             </div>
         </div>
         <div class="col-md-6">

@@ -7,24 +7,26 @@
                 <div class="p-lg-5 p-0 w-100">
                     <div class="p-3 bg-white">
 
-                        <h1 class="h2 ">{{ __('Reset Password') }}</h1>
+                        <h1 class="h2 ">
+                            Réinitialiser le mot de passe
+                        </h1>
                         @if (session('status'))
                             <div class="alert alert-success mb-0 mt-3" role="alert">
                                 {{ session('status') }}
                             </div>
                         @else
                             <p class="">
-                                Please enter your email address to reset your password.
+                                Merci de renseigner votre adresse email pour réinitialiser votre mot de passe.
                             </p>
                             @include('app.layout.common.alerts')
-                            <form method="POST" action="{{ route('password.email') }}" class="form-validate">
+                            <form method="POST" action="{{ route('password.email') }}" >
                                 @csrf
                                 <div class="form-floating mb-3">
-                                    {{ Form::email('email','',['class' => 'form-control',"required",'placeholder' => "email"]) }}
-                                    {{ Form::label('email','Email') }}
+                                    {{ html()->email('email')->class('form-control')->required()->placeholder('')->attribute('autofocus', true) }}
+                                    {{ html()->label("Email",'email') }}
                                 </div>
                                 <button type="submit" class="btn btn-primary w-100">
-                                    Reset
+                                    Réinitialiser le mot de passe
                                 </button>
 
                             </form>

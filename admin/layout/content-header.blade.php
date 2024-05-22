@@ -4,7 +4,7 @@
             <!-- Navbar links -->
             <div class="d-flex align-items-center">
                 <div class="d-flex align-items-center">
-                    <a href="{{ route('home') }}"><i class="fa fa-eye"></i> Voir le site</a>
+                    <a href="{{ route('hub.home') }}"><i class="fa fa-eye"></i> Voir le site</a>
 {{--                    <livewire:site-search/>--}}
                 </div>
             </div>
@@ -23,7 +23,7 @@
                     </a>
                     <div class="dropdown-menu dashboard-dropdown dropdown-menu-end mt-2 py-1">
 
-                        <a class="dropdown-item d-flex align-items-center" href="{{ route('home') }}">
+                        <a class="dropdown-item d-flex align-items-center" href="{{ route('hub.home') }}">
                             <i class="fa fa-eye dropdown-icon me-2"></i>
                             Voir le site
                         </a>

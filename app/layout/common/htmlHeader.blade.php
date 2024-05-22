@@ -11,6 +11,5 @@
     @vite(['resources/app/sass/app.scss'])
     @stack('stylesheets')
     {{--    <meta name="theme-color" content="#"/>--}}
-    @livewireStyles
 </head>
 
